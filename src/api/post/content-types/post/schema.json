@@ -36,7 +36,8 @@
       "type": "dynamiczone",
       "components": [
         "posts.media-section",
-        "posts.text-section"
+        "posts.text-section",
+        "posts.embeded"
       ]
     },
     "Title": {

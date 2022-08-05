@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_posts_embededs",
+  "info": {
+    "displayName": "Embeded",
+    "icon": "external-link-square-alt"
+  },
+  "options": {},
+  "attributes": {
+    "Link": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2022-08-05T00:33:27.780Z"
+    "x-generation-date": "2022-08-05T00:39:26.923Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -5536,6 +5536,20 @@
                                             "type": "string"
                                           }
                                         }
+                                      },
+                                      {
+                                        "type": "object",
+                                        "properties": {
+                                          "id": {
+                                            "type": "string"
+                                          },
+                                          "__component": {
+                                            "type": "string"
+                                          },
+                                          "Link": {
+                                            "type": "string"
+                                          }
+                                        }
                                       }
                                     ]
                                   }
@@ -7242,6 +7256,20 @@
                                           "type": "string"
                                         }
                                       }
+                                    },
+                                    {
+                                      "type": "object",
+                                      "properties": {
+                                        "id": {
+                                          "type": "string"
+                                        },
+                                        "__component": {
+                                          "type": "string"
+                                        },
+                                        "Link": {
+                                          "type": "string"
+                                        }
+                                      }
                                     }
                                   ]
                                 }
@@ -7679,6 +7707,17 @@
                       "type": "string"
                     }
                   }
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "__component": {
+                      "type": "string"
+                    },
+                    "Link": {
+                      "type": "string"
+                    }
+                  }
                 }
               ]
             }
@@ -7759,6 +7798,17 @@
                           "type": "string"
                         },
                         "Text": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "__component": {
+                          "type": "string"
+                        },
+                        "Link": {
                           "type": "string"
                         }
                       }
@@ -9066,6 +9116,20 @@
                       "type": "string"
                     },
                     "Text": {
+                      "type": "string"
+                    }
+                  }
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "__component": {
+                      "type": "string"
+                    },
+                    "Link": {
                       "type": "string"
                     }
                   }
@@ -10683,6 +10747,20 @@
                                 "type": "string"
                               },
                               "Text": {
+                                "type": "string"
+                              }
+                            }
+                          },
+                          {
+                            "type": "object",
+                            "properties": {
+                              "id": {
+                                "type": "string"
+                              },
+                              "__component": {
+                                "type": "string"
+                              },
+                              "Link": {
                                 "type": "string"
                               }
                             }
@@ -12326,6 +12404,20 @@
                               "type": "string"
                             },
                             "Text": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        {
+                          "type": "object",
+                          "properties": {
+                            "id": {
+                              "type": "string"
+                            },
+                            "__component": {
+                              "type": "string"
+                            },
+                            "Link": {
                               "type": "string"
                             }
                           }
@@ -14003,6 +14095,20 @@
                                                   "type": "string"
                                                 },
                                                 "Text": {
+                                                  "type": "string"
+                                                }
+                                              }
+                                            },
+                                            {
+                                              "type": "object",
+                                              "properties": {
+                                                "id": {
+                                                  "type": "string"
+                                                },
+                                                "__component": {
+                                                  "type": "string"
+                                                },
+                                                "Link": {
                                                   "type": "string"
                                                 }
                                               }
@@ -15717,6 +15823,20 @@
                                                 "type": "string"
                                               },
                                               "Text": {
+                                                "type": "string"
+                                              }
+                                            }
+                                          },
+                                          {
+                                            "type": "object",
+                                            "properties": {
+                                              "id": {
+                                                "type": "string"
+                                              },
+                                              "__component": {
+                                                "type": "string"
+                                              },
+                                              "Link": {
                                                 "type": "string"
                                               }
                                             }
