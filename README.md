@@ -20,5 +20,5 @@ yarn start
 ### `Initial Admin User`
 
 
-username: `admin`
+email: `admin@example.com`
 password: `admin`
