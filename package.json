@@ -5,9 +5,11 @@
   "description": "A Strapi application",
   "scripts": {
     "develop": "strapi develop",
+    "develop-admin": "npm run install-admin && strapi develop --watch-admin",
     "start": "strapi start",
     "build": "strapi build",
-    "strapi": "strapi"
+    "strapi": "strapi",
+    "install-admin": "rm -rf ./node_modules/@strapi/admin && cp -r ./admin ./node_modules/@strapi"
   },
   "dependencies": {
     "@strapi/plugin-documentation": "^4.3.2",
@@ -21,7 +23,7 @@
     "name": "A Strapi developer"
   },
   "strapi": {
-    "uuid": "5abce832-2f8a-4675-83fc-f908e29d5a58"
+    "uuid": false
   },
   "engines": {
     "node": ">=12.x.x <=16.x.x",
