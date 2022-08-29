@@ -12,6 +12,7 @@
     "install-admin": "rm -rf ./node_modules/@strapi/admin && cp -r ./admin ./node_modules/@strapi"
   },
   "dependencies": {
+    "@strapi/admin": "^4.3.4",
     "@strapi/plugin-documentation": "^4.3.2",
     "@strapi/plugin-i18n": "4.3.2",
     "@strapi/plugin-users-permissions": "4.3.2",
