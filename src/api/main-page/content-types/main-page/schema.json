@@ -1,0 +1,34 @@
+{
+  "kind": "singleType",
+  "collectionName": "main_pages",
+  "info": {
+    "singularName": "main-page",
+    "pluralName": "main-pages",
+    "displayName": "Main Page"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "NahjulBalagha": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::gallery.gallery"
+    },
+    "Quran": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::gallery.gallery"
+    },
+    "QandA": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::gallery.gallery"
+    }
+  }
+}
