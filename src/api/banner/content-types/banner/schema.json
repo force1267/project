@@ -19,10 +19,6 @@
       "allowedTypes": [
         "images"
       ]
-    },
-    "Active": {
-      "type": "boolean",
-      "default": false
     }
   }
 }

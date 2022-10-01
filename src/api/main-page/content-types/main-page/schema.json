@@ -4,7 +4,8 @@
   "info": {
     "singularName": "main-page",
     "pluralName": "main-pages",
-    "displayName": "Main Page"
+    "displayName": "Main Page",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
@@ -17,18 +18,18 @@
   "attributes": {
     "NahjulBalagha": {
       "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::gallery.gallery"
+      "relation": "oneToMany",
+      "target": "api::sound.sound"
     },
     "Quran": {
       "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::gallery.gallery"
+      "relation": "oneToMany",
+      "target": "api::sound.sound"
     },
     "QandA": {
       "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::gallery.gallery"
+      "relation": "oneToMany",
+      "target": "api::sound.sound"
     }
   }
 }
