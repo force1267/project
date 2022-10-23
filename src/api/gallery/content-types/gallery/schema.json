@@ -30,6 +30,11 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::sound.sound"
+    },
+    "videos": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::video.video"
     }
   }
 }

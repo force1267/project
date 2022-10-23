@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2022-10-01T15:23:21.790Z"
+    "x-generation-date": "2022-10-23T14:22:08.914Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -15152,6 +15152,20 @@
               "example": "string or id"
             }
           },
+          "videos": {
+            "type": "array",
+            "items": {
+              "oneOf": [
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "string"
+                }
+              ],
+              "example": "string or id"
+            }
+          },
           "locale": {
             "type": "string"
           }
@@ -15173,6 +15187,20 @@
                 "type": "string"
               },
               "sounds": {
+                "type": "array",
+                "items": {
+                  "oneOf": [
+                    {
+                      "type": "integer"
+                    },
+                    {
+                      "type": "string"
+                    }
+                  ],
+                  "example": "string or id"
+                }
+              },
+              "videos": {
                 "type": "array",
                 "items": {
                   "oneOf": [
@@ -16963,6 +16991,26 @@
                           "type": "string"
                         }
                       }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "videos": {
+            "type": "object",
+            "properties": {
+              "data": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "attributes": {
+                      "type": "object",
+                      "properties": {}
                     }
                   }
                 }
@@ -18801,6 +18849,26 @@
                                     "type": "string"
                                   }
                                 }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "videos": {
+                      "type": "object",
+                      "properties": {
+                        "data": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "id": {
+                                "type": "string"
+                              },
+                              "attributes": {
+                                "type": "object",
+                                "properties": {}
                               }
                             }
                           }
@@ -20665,6 +20733,26 @@
                                   "type": "string"
                                 }
                               }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "videos": {
+                    "type": "object",
+                    "properties": {
+                      "data": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "id": {
+                              "type": "string"
+                            },
+                            "attributes": {
+                              "type": "object",
+                              "properties": {}
                             }
                           }
                         }
