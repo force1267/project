@@ -4,7 +4,7 @@
   "info": {
     "singularName": "video",
     "pluralName": "videos",
-    "displayName": "video",
+    "displayName": "Video",
     "description": ""
   },
   "options": {
@@ -51,7 +51,7 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::category.category",
-      "inversedBy": "videos"
+      "mappedBy": "videos"
     }
   }
 }

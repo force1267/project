@@ -4,7 +4,7 @@
   "info": {
     "singularName": "sound",
     "pluralName": "sounds",
-    "displayName": "sound",
+    "displayName": "Sound",
     "description": ""
   },
   "options": {
@@ -43,7 +43,7 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::category.category",
-      "inversedBy": "sounds"
+      "mappedBy": "sounds"
     }
   }
 }
