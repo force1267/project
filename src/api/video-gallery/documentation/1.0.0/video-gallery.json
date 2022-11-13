@@ -1,5 +1,5 @@
 {
-  "/galleries": {
+  "/video-galleries": {
     "get": {
       "responses": {
         "200": {
@@ -7,7 +7,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/GalleryListResponse"
+                "$ref": "#/components/schemas/VideoGalleryListResponse"
               }
             }
           }
@@ -64,7 +64,7 @@
         }
       },
       "tags": [
-        "Gallery"
+        "Video-gallery"
       ],
       "parameters": [
         {
@@ -148,7 +148,7 @@
           }
         }
       ],
-      "operationId": "get/galleries"
+      "operationId": "get/video-galleries"
     },
     "post": {
       "responses": {
@@ -157,7 +157,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/GalleryResponse"
+                "$ref": "#/components/schemas/VideoGalleryResponse"
               }
             }
           }
@@ -214,23 +214,23 @@
         }
       },
       "tags": [
-        "Gallery"
+        "Video-gallery"
       ],
       "parameters": [],
-      "operationId": "post/galleries",
+      "operationId": "post/video-galleries",
       "requestBody": {
         "required": true,
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "#/components/schemas/GalleryRequest"
+              "$ref": "#/components/schemas/VideoGalleryRequest"
             }
           }
         }
       }
     }
   },
-  "/galleries/{id}": {
+  "/video-galleries/{id}": {
     "get": {
       "responses": {
         "200": {
@@ -238,7 +238,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/GalleryResponse"
+                "$ref": "#/components/schemas/VideoGalleryResponse"
               }
             }
           }
@@ -295,7 +295,7 @@
         }
       },
       "tags": [
-        "Gallery"
+        "Video-gallery"
       ],
       "parameters": [
         {
@@ -309,7 +309,7 @@
           }
         }
       ],
-      "operationId": "get/galleries/{id}"
+      "operationId": "get/video-galleries/{id}"
     },
     "put": {
       "responses": {
@@ -318,7 +318,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/GalleryResponse"
+                "$ref": "#/components/schemas/VideoGalleryResponse"
               }
             }
           }
@@ -375,7 +375,7 @@
         }
       },
       "tags": [
-        "Gallery"
+        "Video-gallery"
       ],
       "parameters": [
         {
@@ -389,13 +389,13 @@
           }
         }
       ],
-      "operationId": "put/galleries/{id}",
+      "operationId": "put/video-galleries/{id}",
       "requestBody": {
         "required": true,
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "#/components/schemas/GalleryRequest"
+              "$ref": "#/components/schemas/VideoGalleryRequest"
             }
           }
         }
@@ -466,7 +466,7 @@
         }
       },
       "tags": [
-        "Gallery"
+        "Video-gallery"
       ],
       "parameters": [
         {
@@ -480,99 +480,7 @@
           }
         }
       ],
-      "operationId": "delete/galleries/{id}"
-    }
-  },
-  "/galleries/{id}/localizations": {
-    "post": {
-      "responses": {
-        "200": {
-          "description": "OK",
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/GalleryLocalizationResponse"
-              }
-            }
-          }
-        },
-        "400": {
-          "description": "Bad Request",
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Error"
-              }
-            }
-          }
-        },
-        "401": {
-          "description": "Unauthorized",
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Error"
-              }
-            }
-          }
-        },
-        "403": {
-          "description": "Forbidden",
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Error"
-              }
-            }
-          }
-        },
-        "404": {
-          "description": "Not Found",
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Error"
-              }
-            }
-          }
-        },
-        "500": {
-          "description": "Internal Server Error",
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Error"
-              }
-            }
-          }
-        }
-      },
-      "tags": [
-        "Gallery"
-      ],
-      "parameters": [
-        {
-          "name": "id",
-          "in": "path",
-          "description": "",
-          "deprecated": false,
-          "required": true,
-          "schema": {
-            "type": "string"
-          }
-        }
-      ],
-      "operationId": "post/galleries/{id}/localizations",
-      "requestBody": {
-        "required": true,
-        "content": {
-          "application/json": {
-            "schema": {
-              "$ref": "#/components/schemas/GalleryLocalizationRequest"
-            }
-          }
-        }
-      }
+      "operationId": "delete/video-galleries/{id}"
     }
   }
 }

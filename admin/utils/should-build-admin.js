@@ -5,12 +5,12 @@ const fs = require('fs-extra');
 const getCustomAppConfigFile = require('./get-custom-app-config-file');
 
 const DEFAULT_PLUGINS = [
-  'content-type-builder',
-  'content-manager',
+  // 'content-type-builder',
+  // 'content-manager',
   'upload',
-  'email',
+  // 'email',
   'i18n',
-  'users-permissions',
+  // 'users-permissions',
 ];
 
 /**

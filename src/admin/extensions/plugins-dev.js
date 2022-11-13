@@ -6,7 +6,7 @@
 import upload from '@strapi/plugin-upload/admin/src';
 import i18N from '@strapi/plugin-i18n/admin/src';
 // import usersPermissions from '../../../../plugins/users-permissions/admin/src';
-console.log("DBG ______ I WAS READ")
+
 const plugins = {
   // 'content-type-builder': contentTypeBuilder,
   // 'email': email,

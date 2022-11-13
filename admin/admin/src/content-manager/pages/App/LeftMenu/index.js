@@ -49,7 +49,7 @@ const LeftMenu = () => {
       id: 'collectionTypes',
       title: {
         id: getTrad('components.LeftMenu.collection-types'),
-        defaultMessage: 'Collection Types',
+        defaultMessage: 'Content',
       },
       searchable: true,
       links: sortBy(matchByTitle(intlCollectionTypeLinks, search), object =>
@@ -60,7 +60,7 @@ const LeftMenu = () => {
       id: 'singleTypes',
       title: {
         id: getTrad('components.LeftMenu.single-types'),
-        defaultMessage: 'Single Types',
+        defaultMessage: 'Website',
       },
       searchable: true,
       links: sortBy(matchByTitle(intlSingleTypeLinks, search), object =>
@@ -106,9 +106,8 @@ const LeftMenu = () => {
             <SubNavSection
               key={section.id}
               label={label}
-              badgeLabel={section.links.length.toString()}
             >
-              {section.links.map(link => {
+              {section.links.filter(link => link.title.toLowerCase() !== "user").map(link => {
                 const search = link.search ? `?${link.search}` : '';
 
                 return (

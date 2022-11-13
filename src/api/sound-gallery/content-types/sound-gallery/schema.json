@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sound_galleries",
+  "info": {
+    "singularName": "sound-gallery",
+    "pluralName": "sound-galleries",
+    "displayName": "Sound Gallery"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "sounds": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::sound.sound"
+    }
+  }
+}

@@ -23,7 +23,6 @@ const getContentTypeLinks = async (models, userPermissions, toggleNotification) 
     const authorizedCtLinks = collectionTypesSectionLinks.filter(
       (_, index) => ctLinksPermissions[index]
     );
-
     // Single Types verifications
     const stLinksPermissionsPromises = checkPermissions(userPermissions, singleTypesSectionLinks);
     const stLinksPermissions = await Promise.all(stLinksPermissionsPromises);

@@ -22,7 +22,8 @@ const useModels = () => {
           request(`/content-manager/${endPoint}`, { method: 'GET' })
         )
       );
-
+      alert()
+      console.log(contentTypes)
       dispatch({
         type: 'GET_MODELS_SUCCEDED',
         contentTypes,

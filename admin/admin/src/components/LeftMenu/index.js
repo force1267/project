@@ -114,7 +114,6 @@ const LeftMenu = ({ generalSectionLinks, pluginsSectionLinks }) => {
           {formatMessage({ id: 'global.content-manager', defaultMessage: 'Content manager' })}
         </NavLink>
         {pluginsSectionLinks.filter(link => ["/plugins/upload"].includes(link.to)).map(link => {
-          // console.log(link)
           const Icon = link.icon;
 
           return (
@@ -139,52 +138,6 @@ const LeftMenu = ({ generalSectionLinks, pluginsSectionLinks }) => {
             </NavLink>
           );
         })}
-        {/* {pluginsSectionLinks.length > 0 ? (
-          <NavSection
-            label={formatMessage({
-              id: 'app.components.LeftMenu.plugins',
-              defaultMessage: '',
-            })}
-          >
-            {pluginsSectionLinks.map(link => {
-              console.log(link)
-              const Icon = link.icon;
-
-              return (
-                <NavLink as={RouterNavLink} to={link.to} key={link.to} icon={<Icon />}>
-                  {formatMessage(link.intlLabel)}
-                </NavLink>
-              );
-            })}
-          </NavSection>
-        ) : null} */}
-
-        {/* {generalSectionLinks.length > 0 ? (
-          <NavSection
-            label={formatMessage({
-              id: 'app.components.LeftMenu.general',
-              defaultMessage: '',
-            })}
-          >
-            {generalSectionLinks.map(link => {
-              const LinkIcon = link.icon;
-
-              return (
-                <NavLink
-                  as={RouterNavLink}
-                  badgeContent={
-                    (link.notificationsCount > 0 && link.notificationsCount.toString()) || undefined
-                  }
-                  to={link.to}
-                  key={link.to}
-                  icon={<LinkIcon />}
-                >
-                  {formatMessage(link.intlLabel)}
-                </NavLink>
-              );
-            })}
-          </NavSection>
-        ) : null} */}
       </NavSections>
 
       <NavUser

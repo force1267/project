@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "video_galleries",
+  "info": {
+    "singularName": "video-gallery",
+    "pluralName": "video-galleries",
+    "displayName": "Video Gallery"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "videos": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::video.video"
+    }
+  }
+}
