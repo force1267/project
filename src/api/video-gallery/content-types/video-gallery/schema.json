@@ -4,17 +4,27 @@
   "info": {
     "singularName": "video-gallery",
     "pluralName": "video-galleries",
-    "displayName": "Video Gallery"
+    "displayName": "Video Gallery",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
   },
-  "pluginOptions": {},
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
     "Title": {
       "type": "string",
       "unique": true,
-      "required": true
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "videos": {
       "type": "relation",

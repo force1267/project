@@ -4,17 +4,27 @@
   "info": {
     "singularName": "sound-gallery",
     "pluralName": "sound-galleries",
-    "displayName": "Sound Gallery"
+    "displayName": "Sound Gallery",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
   },
-  "pluginOptions": {},
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
     "Title": {
       "type": "string",
       "required": true,
-      "unique": true
+      "unique": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "sounds": {
       "type": "relation",
