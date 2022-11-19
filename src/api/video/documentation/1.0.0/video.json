@@ -146,17 +146,6 @@
           "schema": {
             "type": "string"
           }
-        },
-        {
-          "name": "filters",
-          "in": "query",
-          "description": "Filters to apply",
-          "deprecated": false,
-          "required": false,
-          "schema": {
-            "type": "object"
-          },
-          "style": "deepObject"
         }
       ],
       "operationId": "get/videos"
@@ -316,7 +305,7 @@
           "deprecated": false,
           "required": true,
           "schema": {
-            "type": "number"
+            "type": "string"
           }
         }
       ],
@@ -396,7 +385,7 @@
           "deprecated": false,
           "required": true,
           "schema": {
-            "type": "number"
+            "type": "string"
           }
         }
       ],
@@ -487,7 +476,7 @@
           "deprecated": false,
           "required": true,
           "schema": {
-            "type": "number"
+            "type": "string"
           }
         }
       ],
@@ -569,7 +558,7 @@
           "deprecated": false,
           "required": true,
           "schema": {
-            "type": "number"
+            "type": "string"
           }
         }
       ],
