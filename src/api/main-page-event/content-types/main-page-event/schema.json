@@ -1,0 +1,24 @@
+{
+  "kind": "singleType",
+  "collectionName": "main_page_events",
+  "info": {
+    "singularName": "main-page-event",
+    "pluralName": "main-page-events",
+    "displayName": "Main Page Event"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Content": {
+      "type": "richtext"
+    },
+    "time": {
+      "type": "datetime"
+    }
+  }
+}
