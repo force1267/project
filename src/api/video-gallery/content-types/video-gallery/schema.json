@@ -30,6 +30,18 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::video.video"
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
     }
   }
 }

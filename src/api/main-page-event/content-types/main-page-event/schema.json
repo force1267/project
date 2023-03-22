@@ -4,7 +4,8 @@
   "info": {
     "singularName": "main-page-event",
     "pluralName": "main-page-events",
-    "displayName": "Main Page Event"
+    "displayName": "Main Page Event",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -19,6 +20,13 @@
     },
     "time": {
       "type": "datetime"
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }
